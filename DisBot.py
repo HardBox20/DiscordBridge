@@ -80,15 +80,15 @@ async def handle_event(request):
 
     # 🟢 старт
     if event == "start":
-        await send_by_level("basic", f"🌊 Корабль **{sub}** отправился в поход")
+        await send_by_level("basic", f"🌊 Корабль {sub} отправился в поход")
 
     # ✅ успех
     elif event == "end_success":
-        await send_by_level("basic", f"⚓ Корабль **{sub}** добрался до аванпоста")
+        await send_by_level("basic", f"⚓ Корабль {sub} добрался до аванпоста")
 
     # 🔴 провал
     elif event == "end_fail":
-        await send_by_level("basic", f"⚓ Корабль **{sub}** пропал без вести")
+        await send_by_level("basic", f"⚓ Корабль {sub} пропал без вести")
 
     return web.Response(text="ok")
 
