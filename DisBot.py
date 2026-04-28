@@ -111,9 +111,6 @@ async def start_web():
     site = web.TCPSite(runner, "0.0.0.0", port)
     await site.start()
 
-    async def ping(request):
-        return web.Response(text="ok")
-
     print(f"HTTP сервер запущен на {port}")
 
 
