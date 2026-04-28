@@ -6,7 +6,6 @@ import subprocess
 import os
 import sys
 
-os.system("chcp 65001")
 sys.stdout.reconfigure(encoding='utf-8')
 from dotenv import load_dotenv
 
